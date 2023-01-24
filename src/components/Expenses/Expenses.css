@@ -1,0 +1,10 @@
+.expenses {
+  margin: auto;
+  background-color: black;
+  padding: 10px 10px;
+  width: 50vw;
+}
+
+li {
+  list-style: none;
+}

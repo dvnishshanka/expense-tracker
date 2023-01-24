@@ -1,0 +1,16 @@
+.new-expense {
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: rgb(12, 44, 44, 0.5);
+  padding: 10px 10px;
+  width: 50vw;
+}
+
+.new-expense button {
+  background-color: rgb(12, 44, 44);
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 10px;
+  color: white;
+  margin-left: 15px;
+}
