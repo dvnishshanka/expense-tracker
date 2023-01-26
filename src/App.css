@@ -3,6 +3,10 @@
   margin-top: 40px;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
