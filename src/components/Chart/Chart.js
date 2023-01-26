@@ -1,5 +1,22 @@
 import ChartBar from "./ChartBar";
+import Card from "../UI/Card";
+import "./Chart.css";
 
-const Chart = () => {};
+const Chart = (props) => {
+  const dataPointValues = props.dataPoints.map((dataPoint) => dataPoint.value);
+  const totalMaximum = Math.max(...dataPointValues);
+  return (
+    <Card className="chart-card">
+      {props.dataPoints.map((dataPoint) => (
+        <ChartBar
+          key={dataPoint.month}
+          month={dataPoint.month}
+          value={dataPoint.value}
+          maxValue={totalMaximum}
+        />
+      ))}
+    </Card>
+  );
+};
 
 export default Chart;
